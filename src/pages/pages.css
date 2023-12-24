@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+/* home */
+.home1 {
+  background-color: #001220;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+img.img-top,
+img.img-bot {
+  width: 300px;
+  border-radius: 50%;
+  border: solid 2px #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.img-top {
+  display: none;
+}
+
+.home1.scrolled {
+  opacity: 0;
+}
+
+.home1 .kontent {
+  padding-right: 8.8rem;
+}
+.home1 .kontent h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.home1 .kontent h1 span {
+  color: #00ffff;
+}
+
+.home1 .kontent p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.home1 .kontent .kontaklink {
+  margin: 0px 20px;
+  background-color: #00ffff;
+  color: #001220;
+}
+
+.home1 .kontent a {
+  background: #262532;
+  font-size: 1rem;
+  border: solid 2px #00ffff;
+  padding: 8px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.home1 .kontent a:hover {
+  background: #00ffff;
+  color: #000;
+  border: #0000 2px solid;
+}
+
+/* home 2 */
+.home2 {
+  display: flex;
+  /* padding: 20px; */
+  /* background-image: url(./home1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: 800px; */
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.backgroun {
+  background-image: url(./home1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 650px;
+  min-width: 500px;
+}
+
+.backgroun2 img {
+  display: none;
+}
+
+.backgroun {
+  display: flex;
+}
+
+.home2 .kontent2 {
+  padding: 50px 0px;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.home2 .kontent2 .kontainer {
+  margin: 40px 30px;
+  padding-bottom: 110px;
+}
+
+.home2 .kontent2 .kontainer h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+.home2 .kontent2 .kontainer h2 span {
+  color: #00ffff;
+}
+
+.home2 .kontent2 .kontainer p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.home2 .kontent2 .kontainer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+
+  width: 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #00ffff;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+
+/* sampel web */
+.example {
+  background: #001220;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.example .kontainer3 {
+  padding: 50px 0px;
+  padding-bottom: 100px;
+}
+
+.example .kontainer3 h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  padding-top: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.example .kontainer3 h2 span {
+  color: #00ffff;
+}
+
+.example .kontainer3 p {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0 50px;
+}
+
+.example .kontainer3 .card-containner {
+  padding-top: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.custom-card {
+  width: 18rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+  transition: 0.2s;
+}
+
+.custom-card:hover {
+  /* background-color: #00ffff; */
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffff;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) and (min-width: 520px) {
+  img.img-bot {
+    display: none;
+  }
+
+  img.img-top {
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+
+  .home1 {
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+  }
+
+  .home1 .kontent {
+    padding-right: 0;
+    width: 700px;
+  }
+  .backgroun {
+    display: none;
+  }
+
+  .home2 {
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .home2 .kontent2 .kontainer {
+    margin: 0 10px;
+  }
+
+  .home2 .kontent2 .kontainer h2 {
+    font-size: 2.8rem;
+  }
+
+  .home2 .kontent2 .kontainer p {
+    font-size: 1.3rem auto;
+    text-align: left;
+    font-weight: 200;
+  }
+
+  .backgroun2 img {
+    display: block;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .example .kontainer3 .card-containner {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .example .kontainer3 p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .home1 {
+    padding: 0;
+  }
+
+  img.img-bot {
+    display: none;
+  }
+
+  img.img-top {
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vh;
+    width: 200px;
+  }
+
+  .home1 .kontent {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .home1 .kontent h1 {
+    font-size: 1.8rem;
+  }
+
+  .home1 .kontent p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .backgroun {
+    display: none;
+  }
+
+  .backgroun2 img {
+    display: block;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+  .home2 {
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .home2 .kontent2 .kontainer {
+    margin: 0px 10px;
+  }
+
+  .home2 .kontent2 .kontainer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .home2 .kontent2 .kontainer p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .cta span {
+    font-size: 15px;
+  }
+
+  .example .kontainer3 h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .example .kontainer3 p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+/* hp */

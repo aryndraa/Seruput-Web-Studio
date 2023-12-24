@@ -1,0 +1,126 @@
+.logo-navbar {
+  width: 40px;
+  border-radius: 50%;
+  border: solid #00ffff 2px;
+}
+
+nav.navbar {
+  position: fixed;
+  background: #001220;
+  color: #fff;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+a.nav-link {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: ease-in-out 0.2s;
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+  color: #00ffff;
+  transform: translateY(-5px);
+  border-bottom: #00ffff 1px solid;
+}
+
+a.button-kontak {
+  border-radius: 20px;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+button.navbar-toggler {
+  /* border: #000 solid 2px; */
+  background-color: #fff;
+}
+
+button.navbar-toggler:focus:not(:focus-visible) {
+  border: #00ffff solid 2px;
+  outline: none;
+}
+
+span.navbar-toggler-icon {
+  color: #00ffff;
+}
+
+/* footer */
+/* Footer.css */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  color: #001220;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: left;
+}
+
+.footer h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.nonRespon {
+  display: block;
+}
+
+.respon {
+  display: none;
+}
+
+/* Add more styles as needed */
+
+@media screen and (max-width: 520px) {
+  .footer {
+    padding: 20px 0px;
+  }
+
+  .footer h3 {
+    font-size: 0.8rem;
+    margin-bottom: 05px;
+    font-weight: 500;
+  }
+
+  .footer p {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  .nonRespon {
+    display: none;
+  }
+
+  .respon {
+    list-style: none;
+    text-align: left;
+    display: block;
+    padding-left: 0;
+    font-weight: 400;
+  }
+
+  .respon li {
+    height: 20px;
+  }
+  .respon li a {
+    font-size: 0.6rem;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+  }
+}
